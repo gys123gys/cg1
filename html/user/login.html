@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>登录</title>
+</head>
+<body class="bg_f5">
+<div class="m20">
+    <div class="mt10 bg_fff login_input b_e6">
+        <div class="wp100 b_e6_b p_r">
+            <div class="l_icon tc"><img class="va-m" src="../../images/m-icon.png"/></div>
+            <input placeholder="请输入手机号码" type="tel" id="mobile"/>
+            <span class="warning">手机号不能为空</span>
+            <span class="warning">格式错误</span>
+        </div>
+        <div class="wp100 p_r">
+            <div class="l_icon tc"><img class="va-m" src="../../images/p-icon.png"/></div>
+            <input placeholder="请输入密码" type="password" id="password"/>
+            <span class="warning">密码不能为空</span>
+        </div>
+    </div>
+    <div class="mt30 clearfix">
+        <div class="wp100">
+            <input type="button" class="lh3_5rem wp100 bg_f64444 t_white b_radius4 s_13" value="登录" id="loginBtn"/>
+        </div>
+        <div class="wp100 pt20 s_12">
+            <a class="fl t_666" id="fdPwd" href="#">忘记密码</a><a class="fr t_666" href="./register.html">注册新用户</a>
+        </div>
+    </div>
+</div>
+<div class="tc pt20"><img class="wp40" style="opacity: .7;" src="../../images/logo.png"/></div>
+<footer class="fixft bg_fff b_bd_t hfoot s_11">
+    <a href="../home/index.html" class="wp25 fl tc"><div class="wp100 pt8"><img src="../../images/hf1.png"/></div><p class="ptb2">首页</p></a>
+    <a href="../detail/mall_index.html" class="wp25 fl tc"><div class="wp100 pt8"><img src="../../images/hf2.png"/></div><p class="ptb2">积分商城</p></a>
+    <a href="../consume/consume.html" class="wp25 fl tc"><div class="wp100 pt8"><img src="../../images/hf3.png"/></div><p class="ptb2">积分消费</p></a>
+    <a href="./user_info.html" class="wp25 fl tc"><div class="wp100 pt8"><img src="../../images/hf4.png"/></div><p class="ptb2">个人中心</p></a>
+</footer>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/Login']);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>搜索</title>
+</head>
+
+<body class="bg_f5">
+    <div class="plr20 wp100 p_fixed">
+        <div class="wp100 bg_f6 ptb10">
+            <div class="wp100 bg_e3e3e5 br_4p clearfix p_r" style="height: 52px;">
+                <input id="searchInput" placeholder="搜索商品" class="search-input bg_e3e3e5" type="text" />
+                <a href="javascript:void(0)" id="searchIcon" class="show"><img class="mr-img1" src="../../images/search.png" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="hp72p"></div>
+    <div class="plr20 wp100">
+        <ul class="wp100 bg_fff s_11 br_4p mt8" id="searchUl">
+            <!--<li>商品名称1</li>
+        <li>商品名称2</li>
+        <li>商品名称3</li>-->
+
+        </ul>
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/Search']);
+    </script>
+</body>
+
+</html>

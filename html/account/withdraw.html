@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>取现</title>
+</head>
+
+<body class="bg_f5">
+    <div class="pt20 tc t_f64444">
+        <div>提现每单起步100元</div>
+        <div>提现每天次数3次</div>
+        <div>提现时间：9:00-17：00 工作时间</div>
+    </div>
+    <div class="mlr20 ptb20">
+        <table class="wp100 wd-table s_10">
+            <tr>
+                <th class="wp30 pr6">可用金额</th>
+                <td class="wp70 s_11 pl6">
+                    <span><span id="account_amount"></span></span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30 pr6">银行卡</th>
+                <td class="wp70 pl6">
+                    <input type="telephone" id="bankCard" />
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30 pr6">开户支行</th>
+                <td class="wp70 pl6">
+                    <input type="text" id="toBelong" />
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30 pr6">取现金额</th>
+                <td class="wp70 pl6">
+                    <input type="text" id="amount" />
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30 pr6">交易密码</th>
+                <td class="wp70 pl6">
+                    <input type="text" id="trade_pwd" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mlr20 bg_f64444 b_radius6"><input type="button" class="b_radius6 wp100 bg_f64444 s_12 lh3em t_white" value="提交" id="wdBtn"></div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/Withdraw']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>我的订单</title>
+</head>
+
+<body class="bg_f5">
+    <div class="wp100" id="container">
+
+        <header class="bg_fff ol-head">
+            <nav>
+                <ul id="status_ul" class="clearfix s_12 tc">
+                    <li class="fl pt12 wp20" status="0"><span class="inline_block pb10">全部</span></li>
+                    <li class="fl pt12 wp20" status="1"><span class="inline_block pb10">待支付</span></li>
+                    <li class="fl pt12 wp20" status="2"><span class="inline_block pb10">待发货</span></li>
+                    <li class="fl pt12 wp20" status="3"><span class="inline_block pb10">待收货</span></li>
+                    <li class="fl pt12 wp20" status="9"><span class="inline_block pb10">已完成</span></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hidden pt120" id="noItem">
+            <div class="cartImg">
+                <img class="cartImg-img" src="../../images/order-img.png" />
+                <div class="cartImg-after"></div>
+            </div>
+            <div class="tc lh16em pt14">
+                <h1 class="s_16">您还没有相关的订单</h1>
+                <p class="t_999 s_14 pt4">可以去看看有哪些想买的</p>
+                <p class="pt6 s_14"><a href="../detail/mall_index.html" class="cart-shop">随便逛逛</a></p>
+            </div>
+        </div>
+        <div class="wp100 lh1_5em p_r t_323232 s_10 mt60">
+            <ul class="max-img-h100" id="ol-ul"></ul>
+        </div>
+
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/OrderList']);
+    </script>
+</body>
+
+</html>

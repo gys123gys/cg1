@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>积分购买</title>
+</head>
+<body class="bg_f5">
+    <div class="wp100 p20 tc">
+        <table class="withdraw-table wp100">
+            <tr>
+                <th>可用余额</th>
+                <td id="kyje"></td>
+            </tr>
+            <tr>
+                <th>购买数量</th>
+                <td><input type="number" id="quality"/></td>
+            </tr>
+            <tr>
+                <th>所需金额</th>
+                <td>￥<span id="amount"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="wp100 plr20"><input type="button" id="sbtn" class="bg_f64444 wp100 lh2_5em b_radius8 t_white s_14" value="立即购买"/></div>
+    <div id="od-mask" class="mask hidden"></div>
+	<div id="od-tipbox" class="od-dialog wp80 mlr_auto bg_fff shadow-box hidden">
+	    <div class="pl10 t_80 s_10 ptb4 b_bd_b">提示</div>
+	    <div class="wp100 tc s_12 ptb20 b_bd_b tl pl10">
+	    	<div>购买积分：<span id="integral" class="t_f64444">100</span></div>
+	    	<div>所需人民币：<span id="money" class="t_f64444">￥100.00</span></div>
+	    </div>
+	    <div class="wp100 clearfix tc lh2_5em">
+	        <div class="wp50 fl od-okbtn" id="odOk">确定</div><div class="wp50 fl t_80" id="odCel">取消</div>
+	    </div>
+	</div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/BuyIntegral']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>账户设置</title>
+</head>
+
+<body class="bg_f5">
+
+    <div class="bg_fff b_bd_t b_bd_b lh3em">
+        <a href="./resetPwd.html" class="plr10 p_r b_bd_b show">
+        修改登录密码
+        <i class="r-tip"></i>
+    </a>
+        <a href="./changeMobile.html" class="show plr10 p_r">
+        修改手机号
+        <i class="r-tip"></i>
+    </a>
+    </div>
+    <div class="fixft lh3_5em tc bg_fff t_ed2b2b b_bd_t" id="loginOut">退出登录</div>
+    <i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/UserSet']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>个人中心</title>
+</head>
+
+<body class="bg_f5">
+    <header class="bg_f64444 plr10 ptb20 p_r hidden">
+        <a id="uTop" href='./user_set.html' class="show t_white s_13">
+            <img src="../../images/person.png" class="va-m wp60p hp60p b_radius50 border2pfff" />
+            <span class="pl20 inline_block va-m" id="mobile"></span>
+            <span class="r-tip1"></span>
+        </a>
+    </header>
+    <i id="cont" class="icon-loading"></i>
+    <div class="clearfix bg_dd3d3d tc s_12">
+        <div class="fl wp50 br_f64444 ptb10">
+            <a href="./recharge.html" class="show t_white" href=""><img src="../../images/recharge.png" class="wp22p va-m" /><span class="inline_block va-m pl4">充值</span></a>
+        </div>
+        <div class="fl wp50 ptb10">
+            <a href="./withdraw.html" class="show t_white" href=""><img src="../../images/withdraw.png" class="wp22p va-m" /><span class="inline_block va-m pl4">提现</span></a>
+        </div>
+    </div>
+    <div class="b_bd_tb ptb10 bg_fff p_r s_12 hidden">
+        <img src="../../images/zhye.png" class="va-m wp22p ml10" />
+        <span class="pl4 inline_block va-m"><span>账户余额：</span><span class="t_f64444 s_12">￥<span id="mAmount"></span></span>
+        </span>
+        <div class="fr s_10">
+            <span class="t_6698eb button b_6698eb ml4 mr10" id="mFundList">资金明细</span>
+        </div>
+    </div>
+    <div class="b_bd_tb ptb10 mt10 bg_fff p_r s_12 hidden">
+        <img src="../../images/kyjf.png" class="va-m wp22p ml10" />
+        <span class="pl4 inline_block va-m"><span>可用积分：</span><span class="t_f64444 s_12"><span id="amount"></span></span>
+        </span>
+        <div class="fr s_10">
+            <span class="t_6698eb button b_6698eb ml4 mr10" id="fundBuy">积分购买</span>
+        </div>
+        <div class="fr s_10">
+            <span class="t_6698eb button b_6698eb ml4 mr10" id="fundList">积分明细</span>
+        </div>
+    </div>
+
+    <div class="b_bd_tb ptb10 mt10 bg_fff p_r s_12 hidden">
+        <a href="./order_list.html" class="show">
+            <img src="../../images/wddd.png" class="va-m wp22p ml10">
+            <span class="pl4 inline_block va-m">我的订单</span>
+            <span class="r-tip"></span>
+        </a>
+    </div>
+    <div class="b_bd_b bg_fff clearfix s_10 pt18 pb14 hidden">
+        <div class="fl wp33 tc">
+            <a href="./order_list.html?i=1">
+                <div><img class="wp30p" src="../../images/dfk.png"></div>
+                <p>待支付</p>
+            </a>
+        </div>
+        <div class="fl wp33 tc">
+            <a href="./order_list.html?i=2">
+                <div><img class="wp34p" src="../../images/dfh.png"></div>
+                <p>待发货</p>
+            </a>
+        </div>
+        <div class="fl wp33 tc">
+            <a href="./order_list.html?i=3">
+                <div><img class="wp27p" src="../../images/dsh.png"></div>
+                <p>待收货</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="b_bd_tb ptb10 mt10 bg_fff p_r s_12 hidden">
+        <a href="./aboutus.html" class="show">
+            <img src="../../images/gywm.png" class="va-m wp22p ml10">
+            <span class="pl4 inline_block va-m">关于我们</span>
+            <span class="r-tip"></span>
+        </a>
+    </div>
+    <div style="height: 106px;"></div>
+    <div class="fixft bottom_80 s_12 tc t_666"><img class="ui-phone-icon" src="../../images/telephone.png" /><span class="va-m inline_block" id="telephone">xxx-xxx-xxxx</span></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="../home/index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf1.png" /></div>
+            <p class="ptb2">首页</p>
+        </a>
+        <a href="../detail/mall_index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf2.png" /></div>
+            <p class="ptb2">积分商城</p>
+        </a>
+        <a href="../consume/consume.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf3.png" /></div>
+            <p class="ptb2">积分消费</p>
+        </a>
+        <a href="./user_info.html" class="wp25 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf4_2.png" /></div>
+            <p class="ptb2">个人中心</p>
+        </a>
+    </footer>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/UserInfo']);
+    </script>
+</body>
+
+</html>

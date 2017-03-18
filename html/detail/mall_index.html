@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>产品分类</title>
+</head>
+
+<body class="bg_f5">
+    <nav style="height: 44px;margin: 10px;" class="p_r">
+        <input id="searchInput" placeholder="搜索商品" class="searchInput b_radius8" type="text" />
+        <a href="javascript:void(0)" id="searchIcon" class="show"><img class="mr-img2" src="../../images/search.png" /></a>
+    </nav>
+    <div class="mlr10 bg_fff mt10 hcont" id="allItems"></div>
+    <a class="buy-cart-icon" href="../user/cart.html"><i></i></a>
+    <div style="height: 88px;"></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="../home/index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf1.png" /></div>
+            <p class="ptb2">首页</p>
+        </a>
+        <a href="./mall_index.html" class="wp25 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf2_2.png" /></div>
+            <p class="ptb2">积分商城</p>
+        </a>
+        <a href="../consume/consume.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf3.png" /></div>
+            <p class="ptb2">积分消费</p>
+        </a>
+        <a href="../user/user_info.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf4.png" /></div>
+            <p class="ptb2">个人中心</p>
+        </a>
+    </footer>
+    <link rel="import" href="../footer.html?__inline">
+    <script src="../../js/lib/jquery.lazyload.min.js"></script>
+    <script>
+        require(['app/controller/MallIndex']);
+    </script>
+</body>
+
+</html>

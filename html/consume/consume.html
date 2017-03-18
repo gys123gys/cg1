@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>积分消费</title>
+</head>
+
+<body class="bg_f5">
+
+    <div class="plr20 wp100 p_fixed bg_f64444 zIndex901" id="conTop">
+        <div class="wp100 ptb10 clearfix">
+            <div class="inline_block consume-tl" id="city">
+                <span class="va-m inline_block"></span>
+                <img src="../../images/c-down.png" class="va-m wp16p" />
+            </div>
+            <div class="wp100 br_4p clearfix p_r inline_block pl70">
+                <input id="searchInput" placeholder="搜索商户" class="search-input bg_fff b_radius20i pr14i pl35i" type="text" />
+                <a href="javascript:void(0)" id="searchIcon" class="show"><img class="va-m max-hp15em consume-ml" src="../../images/search.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="plr20 wp100 consume-sul">
+        <ul class="wp100 bg_fff s_11 br_4p b_bd hidden" id="searchUl"></ul>
+    </div>
+    <i id="loaddingIcon1" class="icon-loading bg_transparent hidden top_0"></i>
+    <div class="bg_fff p20 consume-fl wp100" id="tableWrap">
+        <table class="consume-table wp100" id="con-table"></table>
+    </div>
+    <div id="marginTop" class="hp254p"></div>
+    <div class="mt20 plr10 consume-cont bg_fff">
+        <ul id="consume-ul"></ul>
+    </div>
+    <div id="mask" class="mask hidden zIndex900"></div>
+    <div class="bg_fff wp100 consume_list_div hidden" style="z-index: 900" id="consumeDiv">
+        <div class="wp100 bg_f5 ptb10" style="padding: 8px 10px;position: fixed;">
+            <div class="wp100 br_4p clearfix p_r">
+                <input id="cityInput" placeholder="输入城市名" class="search-input bg_fff" type="text">
+                <a href="javascript:void(0)" id="searchCity" class="consume-top-a"><img class="mh100" src="/static/images/search.png"></a>
+            </div>
+            <div id="result">
+                <div id="nowDiv" class="inline_block"></div>
+                <span class="pl10 hidden" id="noResult">未找到相关城市</span>
+                <div class="hidden fr" id="sResult"></div>
+            </div>
+        </div>
+        <ul class="wp100 consume_ul" id="consumeUl"></ul>
+    </div>
+    <i id="loaddingIcon" class="icon-loading bg_transparent top_0" style="background-color: #000;opacity: 0.4;top: -72px;"></i>
+    <div style="height: 106px;"></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="../home/index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf1.png" /></div>
+            <p class="ptb2">首页</p>
+        </a>
+        <a href="../detail/mall_index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf2.png" /></div>
+            <p class="ptb2">积分商城</p>
+        </a>
+        <a href="./consume.html" class="wp25 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf3_2.png" /></div>
+            <p class="ptb2">积分消费</p>
+        </a>
+        <a href="../user/user_info.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf4.png" /></div>
+            <p class="ptb2">个人中心</p>
+        </a>
+    </footer>
+    <link rel="import" href="../footer.html?__inline">
+    <script src="//api.map.baidu.com/api?v=2.0&ak=GtNrG008U04GONzKSDHiW70GxurUUhlU&s=1" type="text/javascript"></script>
+    <script>
+        require(['app/controller/Consume']);
+    </script>
+</body>
+
+</html>

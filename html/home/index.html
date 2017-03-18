@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>菜狗商城</title>
+</head>
+
+<body class="bg_f5">
+    <nav style="height: 44px;margin: 10px;" class="p_r">
+        <input id="searchInput" placeholder="搜索商品" class="searchInput b_radius8" type="text" />
+        <a href="javascript:void(0)" id="searchIcon" class="show"><img class="mr-img2" src="../../images/search.png" /></a>
+    </nav>
+    <header>
+        <div class="swiper-container">
+            <div id="top-swiper" class="swiper-wrapper" style="display: -webkit-box;display: -moz-box;"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <div class="mlr10 s_14 ptb10"><img src="../../images/rqtj.png" class="hp26p wp30p" /><span class="pl10">人气推荐</span></div>
+    <div class="mlr10 s_12 ptb10 tc">
+        <table class="index-rmtj">
+            <tbody id="rmtj">
+                <tr>
+                    <td colspan="2" class="scroll-loadding" style="width:100%;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a class="buy-cart-icon" href="../user/cart.html"><i></i></a>
+    <div style="height: 88px;"></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="./index.html" class="wp20 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf1_2.png" /></div>
+            <p class="ptb2">首页</p>
+        </a>
+        <a href="./index.html" class="wp20 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf1_2.png" /></div>
+            <p class="ptb2">首页1</p>
+        </a>
+        <a href="../detail/mall_index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf2.png" /></div>
+            <p class="ptb2">积分商城</p>
+        </a>
+        <a href="../consume/consume.html" class="wp20 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf3.png" /></div>
+            <p class="ptb2">积分消费</p>
+        </a>
+        <a href="../user/user_info.html" class="wp20 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf4.png" /></div>
+            <p class="ptb2">个人中心</p>
+        </a>
+    </footer>
+    <link rel="import" href="../footer.html?__inkline">
+    <script>
+        require(['app/controller/Index']);
+    </script>
+</body>
+
+</html>

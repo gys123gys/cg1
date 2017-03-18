@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>分类列表</title>
+</head>
+
+<body class="bg_f5">
+
+    <div class="wp100 p_fixed zIndex900">
+        <div class="wp100 plr20 bg_f64444 ptb4 clearfix">
+            <div class="wp100 bg_f64444 ptb10">
+                <div class="wp100 br_4p clearfix p_r">
+                    <input id="searchInput" placeholder="输入商户名" class="search-input bg_fff" type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="plr20 bg_efdade s_10" style="line-height: 36px;">
+            <div class="inline_block" id="lTypes">
+                <span class="va-m inline_block"></span>
+                <img src="../../images/c-down.png" class="va-m wp16p" />
+            </div>
+            <div class="consume-list-top-line"></div>
+            <div class="inline_block" id="lAreas">
+                <span class="va-m inline_block">全部</span>
+                <img src="../../images/c-down.png" class="va-m wp16p" />
+            </div>
+        </div>
+    </div>
+    <div id="mask" class="mask hidden"></div>
+    <div class="bg_fff wp100 clist_div hidden" id="cListDiv">
+        <ul class="wp100 consume_ul1" id="consumeUl"></ul>
+    </div>
+    <div class="bg_fff wp100 clist_div hidden" id="cAreaDiv">
+        <ul class="wp100 consume_ul1" id="consumeAreaUl">
+        </ul>
+    </div>
+    <div style="height:130px;"></div>
+    <div class="plr20 wp100 cons-list">
+        <ul class="wp100 bg_fff s_11 br_4p mt8 b_bd hidden" id="searchUl"></ul>
+    </div>
+
+    <div class="plr10 consume-cont bg_fff">
+        <ul id="consume-ul"></ul>
+    </div>
+    <div style="height: 106px;"></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="../home/index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf1.png" /></div>
+            <p class="ptb2">首页</p>
+        </a>
+        <a href="../detail/mall_index.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf2.png" /></div>
+            <p class="ptb2">积分商城</p>
+        </a>
+        <a href="./consume.html" class="wp25 fl tc active">
+            <div class="wp100 pt8"><img src="../../images/hf3_2.png" /></div>
+            <p class="ptb2">积分消费</p>
+        </a>
+        <a href="../user/user_info.html" class="wp25 fl tc">
+            <div class="wp100 pt8"><img src="../../images/hf4.png" /></div>
+            <p class="ptb2">个人中心</p>
+        </a>
+    </footer>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/List']);
+    </script>
+</body>
+
+</html>

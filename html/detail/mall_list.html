@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>产品分类</title>
+    <style>
+        #mallWrapper {
+            position: absolute;
+            z-index: 1;
+            bottom: 48px;
+            top: 0;
+            right: 40px;
+            left: 0;
+            background: #fff;
+            height: 42px;
+            line-height: 42px;
+            overflow: hidden;
+        }
+        
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            color: #333;
+            left: 0px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            height: 100%;
+            background-color: #fff;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+        }
+        
+        #scroller ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            height: 100%;
+        }
+        
+        #scroller li {
+            float: left;
+            height: 100%;
+            font-size: 1.2rem;
+            padding: 0 14px;
+        }
+        
+        #scroller li.current {
+            border-bottom: 2px solid #f64444;
+            color: #f64444;
+        }
+        
+        #down {
+            z-index: 1001;
+        }
+    </style>
+</head>
+
+<body class="bg_f5">
+    <header class="wp100" style="background: #f7f7f7;position: fixed;z-index: 999;">
+        <div id="down" class="mall-up-down down-arrow"></div>
+        <div id="allCont" class="hidden bg_fff">
+            <div class="t_666 ml-top-fl plr16 bg_fff b_bd_b s_12 bg_fff">所有分类</div>
+            <div id="allItem" class="plr16 bg_fff ml-top-item s_12 b_bd_t">
+                <ul class="clearfix t_333"></ul>
+            </div>
+            <div id="mall-mask" class="mall-mask"></div>
+        </div>
+        <div id="mallWrapper" class="b_bd_b z_index999">
+            <div id="scroller">
+                <ul></ul>
+            </div>
+        </div>
+    </header>
+
+    <a class="buy-cart-icon" href="../user/cart.html"><i></i></a>
+    <div class="hp48p"></div>
+    <div class="m10">
+        <i id="cont" class="icon-loading"></i>
+        <table class="wp100 mall_list_table" id="mlTable"></table>
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/MallList']);
+    </script>
+</body>
+
+</html>

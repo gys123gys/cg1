@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>商家详情</title>
+</head>
+<body class="bg_f5">
+<div class="bg_fff">
+	<div><img class="wp100" id="pic1"/></div>
+	<div class="lh2em s_13">
+		<div class="clearfix plr10">
+			<span class="t_bold" id="name"></span>
+			<div class="fr" id="dzIcon">
+				<img class="wp18p va-m" id="goodImg" src="../../images/good.png">
+				<span class="inline_block va-m t_80 s_11" id="totalDzNum"></span>
+			</div>
+		</div>
+		<div class="plr10"><span class="s_11 t_80" id="advert"></span></div>
+		<div class="b_bd_t plr10 clearfix" id="detailCont">
+			<img class="va-m wp18p" src="../../images/position.png"/>
+			<span class="s_12" id="address"></span>
+		</div>
+		<div class="tr p10">
+			<button class="bg_f64444 t_white lh2em consume-detail-btn" id="sbtn">积分买单</button>
+		</div>
+	</div>
+</div>
+<div id="description" class="p10 bg_fff mt20"></div>
+<i id="cont" class="icon-loading"></i>
+<i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/Detail']);
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>提交订单</title>
+</head>
+
+<body class="bg_f5">
+    <div class="wp100" id="container">
+        <div class="pl10 t_80 s_11 ptb4">收货信息</div>
+        <div class="wp100 plr10 ptb20 lh2em p_r bg_fff" id="addressDiv">
+            <div class="s_10 hidden" id="noAddressDiv">
+                <div class="wp100 tc"><img class="wp44p" src="../../images/no-address.png" /></div>
+                <p class="wp100 tc">还没有收货地址，去<a id="add-addr" class="t_f64444">添加</a></p>
+            </div>
+            <i class="address-bottom hidden" id="addressRight"></i>
+        </div>
+        <div class="pl10 t_80 s_11 ptb4">购物清单</div>
+        <div id="items-cont" class="wp100 lh1_5em p_r t_323232 s_10 bg_fff"></div>
+        <!-- <div class="pl10 t_80 s_11 ptb4">发票类型</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_12 bg_fff">
+        <div class="wp100">发票类型：<select class="b_bd s_12" id="receipt"></select>
+        </div>
+        <div class="wp100 pt10">
+            发票抬头：<input class="b_bd s_12 ptb4 plr4 wp225p" type="text" placeholder="选填" id="receiptTitle"/>
+        </div>
+    </div> -->
+        <div class="pl10 t_80 s_11 ptb4">配送方式</div>
+        <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_12 bg_fff">
+            <div class="wp100">配送方式：<select class="b_bd s_12 t_333" id="psfs"><option value="1">邮寄</option><option value="2">自提</option></select>
+            </div>
+            <div class="wp100 pt10 hidden" id="sj">
+                商家：<select class="b_bd s_12 t_333" id="seller"></select>
+            </div>
+            <div class="wp100 pt10" id="zt">
+                运费：<span class="t_333">买家承担运费</span>
+            </div>
+        </div>
+        <div class="pl10 t_80 s_11 ptb4">备注</div>
+        <div class="wp100 plr10 ptb10 lh1_5em p_r t_666 s_12 bg_fff">
+            <div class="wp100 pt10">
+                <textarea rows="3" class="b_bd s_12 plr4 ptb4 wp100" placeholder="选填" id="apply_note"></textarea>
+            </div>
+        </div>
+    </div>
+    <i id="cont" class="icon-loading"></i>
+    <div id="od-mask" class="mask hidden"></div>
+    <div id="od-tipbox" class="od-dialog wp80 mlr_auto bg_fff shadow-box hidden">
+        <div class="pl10 t_80 s_10 ptb4 b_bd_b">提示</div>
+        <div class="wp100 tc s_12 ptb20 b_bd_b"></div>
+        <div class="wp100 clearfix tc lh2_5em">
+            <div class="wp50 fl od-okbtn" id="odOk">确认</div>
+            <div class="wp50 fl t_80" id="odCel">取消</div>
+        </div>
+    </div>
+    <div style="height: 88px;"></div>
+    <footer class="fixft bg_fff b_bd_t s_14 tc lh3em">
+        <div class="wp60 fl s_13 tl pl10">商品总计:
+            <div class="t_f64444 va-m lh1_2em inline_block s_11">
+                <div><span><span id="totalAmount"></span><span class="s_11 t_40pe">积分</span><span class="hidden" id="mAdd">+</span></span>
+                </div>
+                <div class="hidden" id="cnyDiv"><span><span id="totalCnyAmount"></span><span class="s_11 t_40pe">元</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="wp40 fl bg_f64444 t_white lh3_1em" id="sbtn">提交订单</div>
+    </footer>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/SubmitOrder']);
+    </script>
+</body>
+
+</html>

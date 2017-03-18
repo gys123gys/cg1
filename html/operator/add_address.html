@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>新增地址</title>
+</head>
+<body class="bg_f5">
+<div class="wp100">
+    <div class="bg_fff">
+        <table class="wp100 addr-table s_12">
+            <tr>
+                <th class="wp30">收货人：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="真实姓名" type="text" id="accept_name"/>
+                    <span class="warning top_4">姓名不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">手机号码：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="手机号" type="tel" id="mobile"/>
+                    <span class="warning top_4">手机号不能为空</span>
+                    <span class="warning top_4">格式错误</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">省份：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="省份" type="text" id="provinceCode"/>
+                    <span class="warning top_4">省份不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">城市：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="城市" type="text" id="cityCode"/>
+                    <span class="warning top_4">城市不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">区/县：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="区/县" type="text" id="districtCode"/>
+                    <span class="warning top_4">区/县不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">街道地址：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="街道地址" type="text" id="street"/>
+                    <span class="warning top_4">街道地址不能为空</span>
+                    <span class="warning top_4">长度不能超过128位</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="height: 88px;"></div>
+    <footer class="fixft bg_fff b_bd_t s_14 tc lh3em">
+        <div class="wp100 bg_f64444 t_white" id="sbtn">保存地址</div>
+    </footer>
+</div>
+<i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/AddAddress']);
+</script>
+</body>
+</html>

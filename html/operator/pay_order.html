@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>支付订单</title>
+</head>
+<body class="bg_f5">
+<div class="wp100" id="container">
+    <div class="pl10 t_80 s_10 ptb4">订单信息</div>
+    <div class="wp100 plr10 ptb20 lh2em p_r bg_fff s_10" id="addressDiv"></div>
+    <!-- <div class="pl10 t_80 s_10 ptb4">发票类型</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff">
+        <p class="wp100">发票类型：<span class="pl10" id="od-rtype"></span></p>
+        <p class="wp100 pt10">发票抬头：<span class="pl10" id="od-rtitle"></span></p>
+    </div> -->
+    <div class="pl10 t_80 s_10 ptb4">购物清单</div>
+    <div id="items-cont" class="wp100 lh1_5em p_r t_323232 s_10 bg_fff"></div>
+</div>
+<i id="cont" class="icon-loading"></i>
+<i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+<div id="od-mask" class="mask hidden"></div>
+<div id="od-tipbox" class="od-dialog wp80 mlr_auto bg_fff shadow-box hidden">
+    <div class="pl10 t_80 s_10 ptb4 b_bd_b">提示</div>
+    <div class="wp100 tc s_12 ptb20 b_bd_b">您确定要支付订单吗？</div>
+    <div class="wp100 clearfix tc lh2_5em">
+        <div class="wp50 fl od-okbtn" id="odOk">确定支付</div><div class="wp50 fl t_80" id="odCel">取消</div>
+    </div>
+</div>
+<div style="height: 60px;"></div>
+<footer class="fixft bg_fff b_bd_t s_14 tc lh3em hidden">
+    <div class="wp60 fl">商品总计:
+    	<div class="t_f64444 va-m lh1_2em inline_block s_11">
+            <div><span><span id="totalAmount"></span><span class="s_11 t_40pe">积分</span><span class="hidden" id="mAdd">+</span></span></div>
+            <div class="hidden" id="cnyDiv"><span><span id="totalCnyAmount"></span><span class="s_11 t_40pe">元</span></span></div>
+        </div>
+    </div>
+    <div class="wp40 fl bg_f64444 t_white lh3_1em" id="sbtn">支付订单</div>
+</footer>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/PayOrder']);
+</script>
+</body>
+</html>

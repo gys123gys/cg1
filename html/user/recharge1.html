@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>充值</title>
+</head>
+<body class="bg_f5">
+    <div class="mlr20 mtb20 clearfix recharge-ul s_10 tc">
+        <div class="fl wp33">1.支付宝转账</div>
+        <div class="fl wp40 active">2.转账信息提交</div>
+        <div class="fl wp26">3.等待审核</div>
+    </div>
+    <div class="s_12 t_bold mlr20 pl8">我的打款信息</div>
+    <div class="mlr20 mtb20 pb10">
+        <table class="withdraw-table wp100 s_11">
+            <tr>
+                <th>支付方式</th>
+                <td><span class="p4">支付宝<span></td>
+            </tr>
+            <tr>
+                <th>支付账号</th>
+                <td><input type="text" id="account"/></td>
+            </tr>
+            <tr>
+                <th>充值金额</th>
+                <td><input type="text" id="amount"/></td>
+            </tr>
+        </table>
+    </div>
+    <div class="wp100 plr20"><input type="button" id="sbtn" class="bg_f64444 wp100 lh2_5em b_radius8 t_white s_14" value="提交"/></div>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/Recharge1']);
+</script>
+</body>
+</html>

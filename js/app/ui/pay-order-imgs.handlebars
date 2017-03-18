@@ -1,0 +1,20 @@
+<ul>
+	{{#each items}}
+        <li class="ptb8 clearfix b_bd_b plr10" modelCode="{{modelCode}}">
+            <a class="show" href="../operator/buy.html?code={{modelCode}}">
+                <div class="fl wp30 tc"><img src="{{pic1}}"/></div>
+                <div class="fl wp40 pl12">
+                    <p class="tl line-tow">{{modelName}}</p>
+                    <p class="tl pt4 line-tow">{{productName}}</p>
+                </div>
+                <div class="fl wp30 tr s_11">
+                    <p class="item_totalP">{{salePrice}}<span class="t_40pe s_09 pl4">积分</span></p>
+                    {{#if saleCnyPrice}}
+                    <p class="item_totalP">{{saleCnyPrice}}<span class="t_40pe s_09 pl4">元</span></p>
+                    {{/if}}
+                    <p class="t_80">×<span>{{quantity}}</span></p>
+                </div>
+            </a>
+        </li>  
+    {{/each}}       
+</ul>

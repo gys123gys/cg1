@@ -1,0 +1,20 @@
+{{#each items}}
+	<div class="p_r z_index0">
+		<div class="wp100 addr_div bg_fff">
+		    <a class="ptb20 b_bd_b p_r show plr10" code="{{code}}">
+		        <p class="s_11 t_bold">
+		            <span class="a-addressee">{{addressee}}</span>
+		            <span class="a-mobile" class="pl10">{{mobile}}</span>
+		        </p>
+		        <p class="s_10 pr22 t_323232">
+		            <span class="pr10 a-province">{{province}}</span>
+		            <span class="pr10 a-city">{{city}}</span>
+		            <span class="pr10 a-district">{{district}}</span>
+		            <span class="a-detailAddress">{{detailAddress}}</span>
+		        </p>
+		        <div class="radio-tip"><i></i></div>
+		    </a>
+	    </div>
+	    <div class="s_10 al_addr_del">删除</div>
+    </div>
+{{/each}}

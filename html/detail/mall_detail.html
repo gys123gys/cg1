@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>产品列表</title>
+</head>
+
+<body class="bg_f5">
+    <header class="bg_fff ml_header p_r b_bd_b">
+        <nav style="height: 44px;" class="p_r">
+            <input id="searchInput" placeholder="搜索商品" class="searchInput b_radius8" type="text" />
+            <a href="javascript:void(0)" id="searchIcon" class="show"><img class="mr-img2" src="../../images/search.png" /></a>
+        </nav>
+    </header>
+    <div class="hp48p"></div>
+    <div id="md-div" class="wp100 bg_fff">
+        <ul id="contUl" class="b_bd_b max-hp100">
+            <li class="scroll-loadding"></li>
+        </ul>
+    </div>
+    <a class="buy-cart-icon" href="../user/cart.html"><i></i></a>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/MallDetail']);
+    </script>
+</body>
+
+</html>

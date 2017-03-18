@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>订单详情</title>
+</head>
+<body class="bg_f5">
+<div class="wp100" id="container">
+    <div class="pl10 t_80 s_10 ptb4">订单信息</div>
+    <div class="wp100 plr10 ptb20 lh2em p_r bg_fff s_10" id="orderInfo">
+        <p><span class="pr1em">订单号</span>：<span class="pl_5rem" id="orderCode"></span></p>
+        <p><span>下单时间：</span><span class="pl_5rem" id="orderDate"></span></p>
+        <p><span>订单状态：</span><span class="pl_5rem" id="orderStatus"></span></p>
+    </div>
+    <div class="pl10 t_80 s_10 ptb4">商品信息</div>
+    <div id="od-ul" class="wp100 lh1_5em p_r t_323232 s_10 bg_fff"></div>
+    <div class="t_80 s_10 ptb4 bg_fff tr pr10">商品总计:
+    	<span class="t_f64444 pl4">
+    		<span id="totalAmount"></span>积分<span id="cnySpan" class="hidden">+<span id="totalCnyAmount"></span>元</span>
+    	</span>
+    </div>
+    <div class="pl10 t_80 s_10 ptb4 hidden" id="addressTitle">收货信息</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff hidden" id="addressDiv"></div>
+    <!-- <div class="pl10 t_80 s_10 ptb4">发票类型</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff">
+        <p class="wp100">发票类型：<span class="pl10" id="od-rtype"></span></p>
+        <p class="wp100 pt10">发票抬头：<span class="pl10" id="od-rtitle"></span></p>
+    </div> -->
+    <div class="pl10 t_80 s_10 ptb4 hidden" id="logisticsTitle">物流信息</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff hidden" id="logisticsInfo">
+        <p class="wp100">物流公司：<span class="pl10" id="logisticsComp"></span></p>
+        <p class="wp100 pt10">物流单号：<span class="pl10" id="logisticsNO"></span></p>
+    </div>
+    <div class="pl10 t_80 s_10 ptb4 hidden" id="applyNoteTitle">备注</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff hidden" id="applyNoteInfo"></div>
+    <div class="pl10 t_80 s_10 ptb4 hidden" id="approveNoteTitle">说明</div>
+    <div class="wp100 plr10 ptb20 lh1_5em p_r t_666 s_10 bg_fff hidden" id="approveNoteInfo"></div>
+</div>
+<div id="od-mask" class="mask hidden"></div>
+<div id="od-tipbox" class="od-dialog wp80 mlr_auto bg_fff shadow-box hidden">
+    <div class="pl10 t_80 s_10 ptb4 b_bd_b">提示</div>
+    <div class="wp100 tc s_12 ptb20 b_bd_b">
+        确定取消？
+    </div>
+    <div class="wp100 clearfix tc lh2_5em">
+        <div class="wp50 fl od-okbtn" id="odOk">确认</div><div class="wp50 fl t_80" id="odCel">取消</div>
+    </div>
+</div>
+<i id="cont" class="icon-loading top_0"></i>
+<i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+<div style="height: 60px;"></div>
+<footer class="fixft bg_fff b_bd_t s_14 tc lh3em hidden">
+    <div class="wp50 fl t_323232" id="cbtn">取消订单</div>
+    <div class="wp50 fl bg_f64444 t_white" id="sbtn">支付订单</div>
+</footer>
+<div id="qrsh" class="fixft bg_fff b_bd_t s_14 tc lh3em hidden">
+    <div class="wp100 fl bg_f64444 t_white" id="qr_btn">确认收货</div>
+</div>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/OrderDetail']);
+</script>
+</body>
+</html>

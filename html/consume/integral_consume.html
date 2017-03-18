@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>积分买单</title>
+</head>
+<body class="bg_f5">
+
+	<div class="plr10">
+		<div class="s_12 t_bold b_bd_b ptb10" id="name"></div>
+		<div class="ptb10">
+			<span class="pr10">消费积分</span>
+			<input type="text" placeholder="询问服务员后输入" id="amount" class="plr10 lh2em s_12 h2_4em"/>
+		</div>
+        <div class="wp100 mt20">
+            <input type="button" class="lh3_5rem wp100 bg_f64444 t_white b_radius4 s_13" value="确认买单" id="sbtn"/>
+        </div>
+	</div>
+	<div id="od-mask" class="mask hidden"></div>
+	<div id="od-tipbox" class="od-dialog wp80 mlr_auto bg_fff shadow-box hidden">
+	    <div class="pl10 t_80 s_10 ptb4 b_bd_b">提示</div>
+	    <div class="wp100 tc s_12 ptb20 b_bd_b">您确定支付<span id="integral" class="t_f64444"></span>积分吗？</div>
+	    <div class="wp100 clearfix tc lh2_5em">
+	        <div class="wp50 fl od-okbtn" id="odOk">确定支付</div><div class="wp50 fl t_80" id="odCel">取消</div>
+	    </div>
+	</div>
+    <i id="loaddingIcon" class="icon-loading bg_transparent top_0"></i>
+
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/IntegralConsume']);
+</script>
+</body>
+</html>

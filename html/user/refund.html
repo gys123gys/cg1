@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>申请退货</title>
+</head>
+<body class="bg_fff">
+<section class="main-box applym">
+    <div class="form-field" id="J_Form">
+        <div class="content-wrap">
+            <h3 class="field-hd">退货说明<span class="required">*</span></h3>
+            <section class="field-bd refund-desc refund-desc-active">
+                <textarea class="J_RefundDesc" placeholder="请输入退货说明"></textarea>
+                <span class="J_Counter">200</span>
+            </section>
+        </div>
+        <section class="footer-box form-action new-form-action">
+            <button class="primary-btn J_Submit" type="button" id="sbtn">提交申请</button>
+        </section>
+    </div>
+</section>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/Refund']);
+</script>
+</body>
+</html>

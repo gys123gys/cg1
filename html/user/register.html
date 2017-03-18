@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>注册</title>
+</head>
+<body class="bg_f5">
+<div class="m20">
+    <div class="mt10 bg_fff login_input b_bd">
+        <div class="wp100 b_e6_b">
+            <div class="l_icon tc"><img class="va-m" src="../../images/m-icon.png"/></div>
+            <input placeholder="手机号" type="tel" id="mobile"/>
+            <span class="warning">手机号不能为空</span>
+            <span class="warning">格式错误</span>
+            <span class="warning">该手机已经注册</span>
+        </div>
+        <div class="wp100">
+            <div class="l_icon tc"><img class="va-m" src="../../images/pt-icon.png"/></div>
+            <input type="text" placeholder="图片验证码" id="captcha" class="pr100p">
+            <span class="warning register_warning">验证码不能为空</span>
+            <span class="warning register_warning">验证码错误</span>
+            <div class="photo-verification"><img id="captchaImg" src="#" alt="图片验证码" /></div>
+        </div>
+        <div class="wp100 b_e6_b">
+            <div class="l_icon tc"><img class="va-m" src="../../images/v-icon.png"/></div>
+            <input type="number" placeholder="短信验证码" class="pr100p" id="verification"/>
+            <span class="warning register_warning">验证码不能为空</span>
+            <span class="warning register_warning">验证码错误</span>
+            <span class="warning register_warning">请重新获取验证码</span>
+            <div class="mobile-verification"><a id="getVerification">获取验证码</a></div>
+        </div>
+        <div class="wp100 b_e6_b">
+            <div class="l_icon tc"><img class="va-m" src="../../images/p-icon.png"/></div>
+            <input placeholder="设置密码" type="password" id="password"/>
+            <span class="warning">密码不能为空</span>
+            <span class="warning">密码格式错误</span>
+            <div class="register_verifycon">
+                <p>密码长度6~16位，可以是数字、字母和任意字符</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt30">
+        <div class="wp100">
+            <input type="button" class="lh3_5rem wp100 bg_f64444 t_white b_radius4 s_13" value="注册" id="registerBtn"/>
+        </div>
+        <div class="tc mt10 pt10 s_10 wp100 b_bd_t">如果你已拥有账户，则可在此<a id="toLogin" href="#" class="t_f64444 pl4">登录</a></div>
+    </div>
+</div>
+<link rel="import" href="../footer.html?__inline">
+<script>
+    require(['app/controller/Register']);
+</script>
+</body>
+</html>
